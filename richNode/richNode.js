@@ -26,8 +26,8 @@ function getMdText(mdText) {
     else if (/^(> |>)/.test(line)){   //区块
       nodesArr.push(setBlock(line))
     }
-    else if(/^`{3,3}/.test(line)){  //代码块
-      var type=line.replace(/```/,'language:');
+    else if (/^\s*`{3,3}/.test(line)){  //代码块
+      var type = line.trim().replace(/```/,'language:');
       var code=new Array();
       code.push(type);
       var j=i+1;
@@ -39,10 +39,10 @@ function getMdText(mdText) {
         //   console.log(j)
         //   break;
         // }
-        if (/^`{3,3}$/.test(lines[j])) {
+        if (/^`{3,3}$/.test(lines[j].trim())) {
           isEnd=true;
         }else{
-          code.push(lines[j])
+          code.push(lines[j].trim())
         }
         j++;
       }
