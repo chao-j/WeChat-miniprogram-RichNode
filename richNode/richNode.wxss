@@ -1,0 +1,87 @@
+#rt-container{
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+/* 标题 */
+.h1{
+  font-size: 1.5rem;
+}
+.h2{
+  font-size: 1.4rem;
+}
+.h3{
+  font-size: 1.3rem;
+}
+.h4{
+  font-size: 1.2rem;
+}
+.h5{
+  font-size: 1.1rem;
+}
+.h6{
+  font-size: 1rem;
+}
+/* 列表 */
+.li{
+  
+}
+/* 分割线 */
+.hr{
+  width: 80%;
+  margin: 20rpx auto;
+}
+/* 链接 */
+.a{
+  text-decoration: underline;
+  color: #00f;
+  margin: 0 5rpx;
+}
+/* 粗体 */
+.blod{
+  font-weight: bold;
+}
+/* 斜体 */
+.italic{
+  font-style: italic;
+}
+/* 粗斜体 */
+.blod-italic{
+  font-weight: bold;
+  font-style: italic;
+}
+/* 删除体 */
+.delete{
+  font-style: italic;
+  text-decoration: line-through;
+  color: #444;
+}
+/* 代码片段 */
+.code-frag{
+  padding: 0.2rem;
+  background-color: #eee;
+}
+/* 图片 */
+.img{
+  width: 70vw;
+  margin: 0 auto;
+  display: block;
+}
+/* 段落 */
+.p{
+  text-indent: 1.5rem;
+  margin: 1rem 0;
+}
+/* 区块 */
+.block{
+  /* background-color: #eee; */
+  border-left: 10rpx solid #ccc;
+  padding-left: 10rpx;
+  color: #444;
+}
+/* 代码区块 */
+.code-block{
+  margin: 10rpx;
+  padding: 0.5rem;
+  background-color: rgb(14, 14, 27);
+  color: #fff;
+}
